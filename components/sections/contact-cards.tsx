@@ -32,7 +32,8 @@ export default function ContactCards() {
   };
 
   return (
-    <section className="section-container bg-secondary/20">
+    <section className="relative py-24 sm:py-32 bg-secondary/40 overflow-hidden">
+      <div className="section-container">
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         variants={containerVariants}
@@ -48,10 +49,11 @@ export default function ContactCards() {
               href={detail.href}
               target={detail.type === 'office' || detail.type === 'whatsapp' ? '_blank' : undefined}
               rel={detail.type === 'office' || detail.type === 'whatsapp' ? 'noopener noreferrer' : undefined}
-              className="bg-background p-8 rounded-xl border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
+              className="relative bg-background p-8 rounded-xl border border-border hover:border-accent/50 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden"
               variants={itemVariants}
             >
-              <div className="mb-5 w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent group-hover:text-background transition-colors duration-300">
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-500" />
+              <div className="mb-5 w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
                 <Icon className="w-5 h-5 text-accent group-hover:text-foreground transition-colors duration-300" strokeWidth={1.75} />
               </div>
               <p className="text-sm font-medium text-muted-foreground mb-2">{detail.label}</p>
@@ -62,6 +64,7 @@ export default function ContactCards() {
           );
         })}
       </motion.div>
+      </div>
     </section>
   );
 }

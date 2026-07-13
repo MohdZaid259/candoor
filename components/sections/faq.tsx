@@ -28,7 +28,8 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="section-container bg-secondary/20 scroll-mt-24">
+    <section id="faq" className="relative py-24 sm:py-32 bg-secondary/40 scroll-mt-24 overflow-hidden">
+      <div className="section-container">
       <motion.div
         className="max-w-3xl mx-auto text-center mb-14"
         initial={{ opacity: 0, y: 20 }}
@@ -54,7 +55,7 @@ export default function FAQ() {
           <motion.div
             key={item.question}
             variants={itemVariants}
-            className="bg-background rounded-xl border border-border overflow-hidden"
+            className="bg-background rounded-xl border border-border overflow-hidden hover:border-accent/40 hover:shadow-md transition-all duration-300"
           >
             <button
               onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
@@ -84,6 +85,7 @@ export default function FAQ() {
           </motion.div>
         ))}
       </motion.div>
+      </div>
     </section>
   );
 }

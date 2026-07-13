@@ -26,15 +26,15 @@ export default function AboutPageHero() {
   };
 
   return (
-    <section className="relative isolate min-h-[65vh] flex items-end overflow-hidden pt-32 pb-20">
-      <div className="absolute inset-0 -z-10">
+    <section className="relative isolate min-h-[70vh] flex items-end overflow-hidden pt-32 pb-24">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
           src={aboutPageHero.backgroundImage}
           alt="CanDoor Glass Partitions"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-linear-to-t from-foreground via-foreground/70 to-foreground/40" />
       </div>
@@ -58,6 +58,8 @@ export default function AboutPageHero() {
           >
             {aboutPageHero.description}
           </motion.p>
+
+          <motion.div className="mt-8 h-1 w-24 bg-accent origin-left" variants={itemVariants} />
         </motion.div>
       </div>
     </section>

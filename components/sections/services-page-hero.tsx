@@ -26,15 +26,15 @@ export default function ServicesPageHero() {
   };
 
   return (
-    <section className="relative isolate min-h-[65vh] flex items-end overflow-hidden pt-32 pb-20">
-      <div className="absolute inset-0 -z-10">
+    <section className="relative isolate min-h-[65vh] flex items-end overflow-hidden pt-32 pb-24">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
           src={servicesPageHero.backgroundImage}
           alt="CanDoor aluminium and glass fabrication"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-linear-to-t from-foreground via-foreground/70 to-foreground/40" />
       </div>

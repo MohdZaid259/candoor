@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 30 bash -c 'until curl -sf http://localhost:3000 >/dev/null; do sleep 1; done')",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(node C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shot.mjs http://localhost:3000 C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shots/home-full.png)",
+      "Bash(node C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shot.mjs http://localhost:3000/about C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shots/about-full.png)",
+      "Bash(node C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shot.mjs http://localhost:3000/services C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shots/services-full.png)",
+      "Bash(node C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shot.mjs http://localhost:3000/contact C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shots/contact-full.png)",
+      "Bash(node C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shot.mjs http://localhost:3000/projects C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shots/projects-full.png)",
+      "Bash(node C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shot.mjs http://localhost:3000/projects/barakah-om-building C:/Users/Lenovo/AppData/Local/Temp/claude/d--candoor-main-candoor-main/911d1455-a2e1-480e-9b2b-0b54ab13dd13/scratchpad/shots/detail-full.png)"
+    ]
+  }
+}

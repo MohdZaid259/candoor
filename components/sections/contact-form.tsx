@@ -1,8 +1,9 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, Send } from 'lucide-react';
-import { contactForm } from '@/lib/data';
+import { CheckCircle2, Send, Clock, MapPin } from 'lucide-react';
+import { contactForm, contactInfo } from '@/lib/data';
+import { ParallaxImg } from '@/components/ui/parallax';
 import { useState } from 'react';
 
 export default function ContactForm() {
@@ -49,16 +50,45 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="section-container bg-background">
+    <section className="relative py-24 sm:py-32 bg-background overflow-hidden">
+      <div className="section-container grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-stretch">
+        {/* Image panel */}
+        <motion.div
+          className="relative lg:col-span-2 photo-frame corner-notch-sm min-h-96 hidden lg:block"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          <ParallaxImg src="/work/office-khalidiya__b.jpg" alt="CanDoor office glazing project" />
+          <div className="absolute inset-0 bg-linear-to-t from-foreground/85 via-foreground/25 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-8 space-y-4">
+            <div className="flex items-start gap-3 text-white/90">
+              <Clock className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-semibold">Response within 24 hours</p>
+                <p className="text-xs text-white/60">Site visits arranged promptly</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 text-white/90">
+              <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-semibold">{contactInfo.address}</p>
+                <p className="text-xs text-white/60">Serving projects across the UAE</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
       <motion.div
-        className="max-w-2xl mx-auto"
+        className="lg:col-span-3"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.div className="text-center mb-12" variants={itemVariants}>
-          <span className="eyebrow justify-center">Send a Message</span>
+        <motion.div className="text-center lg:text-left mb-12" variants={itemVariants}>
+          <span className="eyebrow justify-center lg:justify-start">Send a Message</span>
           <h2 className="text-4xl font-bold text-foreground mt-4 mb-4">Tell Us About Your Project</h2>
           <p className="text-lg text-muted-foreground">
             Fill out the form below and our team will get back to you within 24 hours.
@@ -138,6 +168,7 @@ export default function ContactForm() {
           )}
         </AnimatePresence>
       </motion.div>
+      </div>
     </section>
   );
 }

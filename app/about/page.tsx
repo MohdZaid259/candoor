@@ -8,7 +8,6 @@ import AboutWhyChooseUs from '@/components/sections/about-why-choose-us'
 import IndustriesServed from '@/components/sections/industries-served'
 import HSE from '@/components/sections/hse'
 import QualityAssurance from '@/components/sections/quality-assurance'
-import CTA from '@/components/sections/cta'
 
 export default function AboutPage() {
   return (
@@ -22,7 +21,6 @@ export default function AboutPage() {
       <IndustriesServed />
       <HSE />
       <QualityAssurance />
-      <CTA />
       <Footer />
     </main>
   )

@@ -14,7 +14,7 @@ export default function Logo({
   return (
     <Link href="/" className={cn('group flex items-center gap-3', className)}>
       <Image
-        src="/candoor-logo.svg"
+        src="/candoor.svg"
         alt="CanDoor Glass Partitions"
         width={180}
         height={58}

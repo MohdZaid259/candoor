@@ -12,7 +12,7 @@ export default function RelatedProjects({ projects }: RelatedProjectsProps) {
   if (projects.length === 0) return null;
 
   return (
-    <section className="section-container">
+    <section className="section-container py-16 sm:py-24">
       <span className="eyebrow mb-4">More Work</span>
       <h2 className="mb-12">Related Projects</h2>
 

@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const lora = Lora({ subsets: ['latin'], variable: '--font-serif' })
 
 export const metadata: Metadata = {
-  title: 'CanDoor Glass Partitions LLC | Aluminium & Glass Fabrication, Abu Dhabi',
+  title: 'CanDoor Glass Partitions LLC',
   description: 'CanDoor Glass Partitions LLC delivers premium aluminium and glass fabrication and installation — curtain walls, structural glazing, partitions, and architectural systems — for government, commercial, and residential projects across the UAE.',
   keywords: 'aluminium and glass, curtain wall, structural glazing, glass partitions, cladding, Abu Dhabi, Musaffah, UAE, aluminium fabrication, CanDoor',
   authors: [{ name: 'CanDoor Glass Partitions LLC' }],
@@ -25,19 +25,14 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/icon.png',
         media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
       },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
   },
 }
 

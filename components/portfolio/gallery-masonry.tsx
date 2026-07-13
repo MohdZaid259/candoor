@@ -31,7 +31,7 @@ export default function GalleryMasonry({ images, title }: GalleryMasonryProps) {
   if (images.length === 0) return null;
 
   return (
-    <div className="section-container">
+    <div className="section-container py-16 sm:py-24">
       <span className="eyebrow mb-4">{title ?? 'Gallery'}</span>
       <h2 className="mb-12">Project Gallery</h2>
       <motion.div

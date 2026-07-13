@@ -1,5 +1,6 @@
 import Navbar from '@/components/layout/navbar'
 import Hero from '@/components/sections/hero'
+import ClientsMarquee from '@/components/sections/clients-marquee'
 import About from '@/components/sections/about'
 import Services from '@/components/sections/services'
 import WhyChooseUs from '@/components/sections/why-choose-us'
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
+      <ClientsMarquee />
       <About />
       <Services />
       <WhyChooseUs />

@@ -1,12 +1,18 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ShieldCheck, ChevronDown } from 'lucide-react';
 import { heroData } from '@/lib/data';
+import { ParallaxImg } from '@/components/ui/parallax';
+import Counter from '@/components/ui/counter';
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start start', 'end start'] });
+  const contentY = useTransform(scrollYProgress, [0, 1], [0, 60]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -28,16 +34,24 @@ export default function Hero() {
   };
 
   return (
-    <section className="pt-32 pb-20 sm:pt-40 sm:pb-28 relative isolate overflow-hidden bg-background">
+    <section ref={sectionRef} className="pt-32 pb-24 sm:pt-40 sm:pb-32 relative isolate overflow-hidden bg-background">
       {/* Background accents */}
       <div className="absolute inset-0 bg-grid-faint -z-20" />
-      <div className="absolute top-0 right-0 w-lg h-128 bg-accent/10 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/40 rounded-full blur-3xl -z-10" />
+      <motion.div
+        className="absolute top-0 right-0 w-lg h-128 bg-accent/10 rounded-full blur-3xl -z-10"
+        animate={{ y: [0, 30, 0], x: [0, -20, 0] }}
+        transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <motion.div
+        className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/40 rounded-full blur-3xl -z-10"
+        animate={{ y: [0, -24, 0] }}
+        transition={{ duration: 11, repeat: Infinity, ease: 'easeInOut' }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left column */}
-          <motion.div variants={containerVariants} initial="hidden" animate="visible">
+          <motion.div variants={containerVariants} initial="hidden" animate="visible" style={{ y: contentY }}>
             <motion.p className="eyebrow mb-6" variants={itemVariants}>
               {heroData.eyebrow}
             </motion.p>
@@ -76,7 +90,10 @@ export default function Hero() {
             >
               {heroData.stats.map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-2xl sm:text-3xl font-bold text-foreground mb-1 font-serif">{stat.number}</p>
+                  <Counter
+                    value={stat.number}
+                    className="block text-2xl sm:text-3xl font-bold text-foreground mb-1 font-serif"
+                  />
                   <p className="text-xs sm:text-sm text-muted-foreground leading-snug">{stat.label}</p>
                 </div>
               ))}
@@ -91,13 +108,11 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: 'easeOut', delay: 0.2 }}
           >
             <div className="relative photo-frame corner-notch aspect-4/5 lg:aspect-3/4">
-              <Image
+              <ParallaxImg
                 src={heroData.backgroundImage}
                 alt="CanDoor glass facade installation, Abu Dhabi"
-                fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="animate-kenburns"
               />
               <div className="absolute inset-0 bg-linear-to-t from-foreground/40 via-transparent to-transparent" />
               <div className="absolute inset-0 border-2 border-accent/40 corner-notch pointer-events-none" />
@@ -105,21 +120,33 @@ export default function Hero() {
 
             {/* Floating credential card */}
             <motion.div
-              className="absolute -bottom-8 -left-6 sm:-left-10 bg-card border border-border rounded-xl shadow-xl p-5 max-w-60"
+              className="absolute -bottom-8 -left-6 sm:-left-10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
-                  <ShieldCheck className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground leading-tight">Barakah Nuclear Power Plant</p>
-                  <p className="text-xs text-muted-foreground">Delivered O&M facility glazing</p>
+              <div
+                className="bg-card border border-border rounded-xl shadow-xl p-5 max-w-60"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground leading-tight">Barakah Nuclear Power Plant</p>
+                    <p className="text-xs text-muted-foreground">Delivered O&M facility glazing</p>
+                  </div>
                 </div>
               </div>
             </motion.div>
+
+            {/* Floating experience chip */}
+            <div
+              className="absolute -top-6 -right-3 sm:-right-6 bg-foreground text-background rounded-xl shadow-xl px-5 py-4"
+            >
+              <Counter value="15+" className="block text-2xl font-bold font-serif text-accent" />
+              <p className="text-[0.65rem] uppercase tracking-wider text-background/70 mt-0.5">Years of Craft</p>
+            </div>
           </motion.div>
         </div>
       </div>

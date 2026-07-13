@@ -27,7 +27,7 @@ export default function ProjectOverview({ project }: ProjectOverviewProps) {
   };
 
   return (
-    <section className="section-container">
+    <section className="section-container py-16 sm:py-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

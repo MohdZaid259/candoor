@@ -1,28 +1,25 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { ctaData } from '@/lib/data';
+import { ParallaxBand } from '@/components/ui/parallax';
 
 export default function CTA() {
   return (
-    <section className="py-24 sm:py-32 relative isolate overflow-hidden">
-      <div className="absolute inset-0 -z-20">
-        <Image
-          src="/work/daikin-company__a.jpg"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-foreground/90" />
-        <div className="absolute inset-0 bg-linear-to-t from-foreground via-foreground/85 to-foreground/70" />
-      </div>
-
+    <ParallaxBand
+      image="/work/daikin-company__a.jpg"
+      alt="CanDoor glazing project"
+      overlayClassName="bg-linear-to-t from-foreground via-foreground/85 to-foreground/70"
+      className="py-28 sm:py-40"
+    >
       {/* Background accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl -z-10" />
+      <motion.div
+        className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl -z-10"
+        animate={{ scale: [1, 1.15, 1] }}
+        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+      />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -35,9 +32,7 @@ export default function CTA() {
           <span className="eyebrow justify-center text-accent/90">Let's Talk</span>
 
           {/* Title */}
-          <h2 className="text-4xl sm:text-5xl font-bold text-background mt-4 mb-6">
-            {ctaData.title}
-          </h2>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-background mt-4 mb-6">{ctaData.title}</h2>
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-background/75 mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -65,6 +60,6 @@ export default function CTA() {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </ParallaxBand>
   );
 }

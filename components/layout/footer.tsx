@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/candoor-logo.svg"
+                src="/candoor.svg"
                 alt="CanDoor Glass Partitions"
                 width={180}
                 height={58}

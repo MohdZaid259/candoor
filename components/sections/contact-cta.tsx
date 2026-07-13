@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { contactPageCTA, contactInfo } from '@/lib/data';
+import { ParallaxBand } from '@/components/ui/parallax';
 
 export default function ContactCTA() {
   const containerVariants = {
@@ -27,10 +28,15 @@ export default function ContactCTA() {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-foreground text-background relative overflow-hidden">
+    <ParallaxBand
+      image="/work/commercial-al-hada__a.jpg"
+      alt="CanDoor commercial glazing project"
+      overlayClassName="bg-linear-to-t from-foreground via-foreground/90 to-foreground/75"
+      className="py-24 sm:py-36 text-background"
+    >
       {/* Background accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/15 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-background/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/15 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-background/5 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -62,6 +68,6 @@ export default function ContactCTA() {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </ParallaxBand>
   );
 }

@@ -28,7 +28,7 @@ export default function ProjectsPage() {
       <Navbar />
       <ProjectsHero />
 
-      <div className="section-container">
+      <div className="section-container py-20 sm:py-28">
         <ProjectFilter
           categories={projectCategories}
           activeCategory={activeCategory}

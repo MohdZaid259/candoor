@@ -1,3 +1,5 @@
+import { asset } from "./assets";
+
 export const companyData = {
   name: "CanDoor Glass Partitions LLC",
   shortName: "CanDoor",
@@ -28,7 +30,7 @@ export const heroData = {
     "Premium aluminium and glass fabrication and installation — curtain walls, structural glazing, partitions, and architectural systems engineered for elegance and built to last.",
   ctaPrimary: "Start Your Project",
   ctaSecondary: "View Our Work",
-  backgroundImage: "/work/cover-hero__hero.jpg",
+  backgroundImage: asset("home/hero.webp"),
   stats: [
     { number: "15+", label: "Years in the Industry" },
     { number: "20+", label: "Projects Delivered" },
@@ -288,11 +290,11 @@ export const aboutPageHero = {
   title: "Transparent Solutions, Stronger Spaces",
   description:
     "From Ziyad Aluminium & Glass to CanDoor Glass Partitions LLC — a can-do spirit driving premium glass and aluminium craftsmanship across the UAE.",
-  backgroundImage: "/work/braka-om-building__a.jpg",
+  backgroundImage: asset("about/hero.webp"),
 };
 
 export const companyOverview = {
-  image: "/work/office-khalidiya__a.jpg",
+  image: asset("about/story.webp"),
   eyebrow: "Our Story",
   title: "The Can-Do Spirit",
   description:
@@ -396,7 +398,7 @@ export const servicesPageHero = {
   title: "Aluminium & Glass, Engineered End to End",
   description:
     "From structural glazing and curtain walls to custom joinery and pergolas — a complete range of aluminium and glass fabrication and installation services.",
-  backgroundImage: "/work/village-mall__a.jpg",
+  backgroundImage: asset("service/hero.webp"),
 };
 
 export const serviceCategories = [
@@ -405,7 +407,7 @@ export const serviceCategories = [
     title: "Curtain Wall & Structural Glazing",
     description:
       "High-performance building envelopes engineered for scale — from unitized and semi-unitized facades to full structural glazing systems, built to withstand the UAE climate.",
-    image: "/work/braka-om-building__a.jpg",
+    image: asset("service/s1.webp"),
     features: [
       "Aluminium Curtain Wall",
       "Structural Glazing",
@@ -418,7 +420,7 @@ export const serviceCategories = [
     title: "Doors, Windows & Partitions",
     description:
       "Thermal and non-thermal aluminium door and window systems, frameless glass jobs, and glass partitions engineered for elegance, function, and acoustic comfort.",
-    image: "/work/office-khalidiya__a.jpg",
+    image: asset("service/s2.webp"),
     features: [
       "Aluminium Doors & Windows (Thermal & Non-Thermal)",
       "Frameless Glass Jobs",
@@ -431,7 +433,7 @@ export const serviceCategories = [
     title: "Specialty & Designer Glass",
     description:
       "Toughened, laminated, and double-glazed glass finished to premium standards — from shower enclosures to mirror and designer glass installations.",
-    image: "/work/villa-junaibi__b.jpg",
+    image: asset("service/s3.webp"),
     features: [
       "Double Glazed Glass",
       "Mirror Glass",
@@ -445,7 +447,7 @@ export const serviceCategories = [
     title: "Metal & Handrail Works",
     description:
       "Precision-fabricated stainless steel and aluminium handrail systems that combine structural safety with architectural detail.",
-    image: "/work/villa-junaibi__c.jpg",
+    image: asset("service/s4.webp"),
     features: [
       "Stainless Steel & Aluminium Hand Rails",
       "Stainless Steel & Glass Handrail",
@@ -457,7 +459,7 @@ export const serviceCategories = [
     title: "Interior Fit-Out Elements",
     description:
       "Custom aluminium and glass interior fixtures — kitchen cabinets, table tops, and counters — finished to match the precision of our architectural work.",
-    image: "/work/pergola-design__b.jpg",
+    image: asset("service/s5.webp"),
     features: [
       "Aluminium Kitchen Cabinets",
       "Glass Partition, Table Top & Counters",
@@ -468,7 +470,7 @@ export const serviceCategories = [
     title: "Pergola & Outdoor Structures",
     description:
       "Bespoke aluminium pergolas and outdoor living structures designed and installed for private villas across the UAE.",
-    image: "/work/pergola-design__a.jpg",
+    image: asset("service/s6.webp"),
     features: [
       "Custom Pergola Design & Installation",
       "Outdoor Living & Kitchen Structures",
@@ -482,7 +484,7 @@ export const contactPageHero = {
   eyebrow: "Get In Touch",
   title: "Let's Start Your Project",
   description: "We'd love to hear from you. Reach out to discuss your next project or ask any questions.",
-  backgroundImage: "/work/warehouse-m11__a.jpg",
+  backgroundImage: asset("contact/hero.webp"),
 };
 
 export const contactDetails = [

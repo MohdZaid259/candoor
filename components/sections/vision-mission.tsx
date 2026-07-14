@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Eye, Target } from 'lucide-react';
 import { visionMission } from '@/lib/data';
+import { asset } from '@/lib/assets';
 
 const icons = { vision: Eye, mission: Target };
 
 const images = {
-  vision: '/work/braka-om-building__b.jpg',
-  mission: '/work/commercial-al-braq__a.jpg',
+  vision: asset('about/vision.webp'),
+  mission: asset('about/mission.webp'),
 };
 
 export default function VisionMission() {

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Clock, Globe2, Building, Landmark, ClipboardCheck, ShieldCheck, Users, Layers, type LucideIcon } from 'lucide-react';
 import { whyChooseUs } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import { ParallaxImg } from '@/components/ui/parallax';
 import Counter from '@/components/ui/counter';
 
@@ -54,8 +55,8 @@ export default function WhyChooseUs() {
 
             <div className="relative photo-frame corner-notch-sm aspect-4/5 border-background/10">
               <ParallaxImg
-                src="/work/daikin-company__a.jpg"
-                alt="CanDoor facade works for Daikin, Abu Dhabi"
+                src={asset('home/why.webp')}
+                alt="CanDoor glass and aluminium engineering expertise"
               />
               <div className="absolute inset-0 bg-linear-to-t from-foreground/70 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">

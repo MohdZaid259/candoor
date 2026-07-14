@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { contactPageCTA, contactInfo } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import { ParallaxBand } from '@/components/ui/parallax';
 
 export default function ContactCTA() {
@@ -29,7 +30,7 @@ export default function ContactCTA() {
 
   return (
     <ParallaxBand
-      image="/work/commercial-al-hada__a.jpg"
+      image={asset('contact/cta.webp')}
       alt="CanDoor commercial glazing project"
       overlayClassName="bg-linear-to-t from-foreground via-foreground/90 to-foreground/75"
       className="py-24 sm:py-36 text-background"

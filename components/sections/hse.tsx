@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ClipboardCheck, AlertTriangle, Wrench, ShieldCheck, GraduationCap, CheckCircle2, type LucideIcon } from 'lucide-react';
 import { hsePoints, safetyPolicy } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import { ParallaxBand } from '@/components/ui/parallax';
 
 const icons: LucideIcon[] = [ClipboardCheck, AlertTriangle, Wrench, ShieldCheck, GraduationCap];
@@ -29,7 +30,7 @@ export default function HSE() {
 
   return (
     <ParallaxBand
-      image="/work/bnpp-workers-village__a.jpg"
+      image={asset('about/hse.webp')}
       alt="CanDoor site works"
       overlayClassName="bg-foreground/90"
       className="py-24 sm:py-32"

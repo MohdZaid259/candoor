@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { ctaData } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import { ParallaxBand } from '@/components/ui/parallax';
 
 export default function CTA() {
   return (
     <ParallaxBand
-      image="/work/daikin-company__a.jpg"
+      image={asset('home/cta.webp')}
       alt="CanDoor glazing project"
       overlayClassName="bg-linear-to-t from-foreground via-foreground/85 to-foreground/70"
       className="py-28 sm:py-40"

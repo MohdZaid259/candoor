@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { aboutData } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import { ParallaxImg } from '@/components/ui/parallax';
 import Counter from '@/components/ui/counter';
 
@@ -43,7 +44,7 @@ export default function About() {
           >
             <div className="relative photo-frame corner-notch-sm aspect-4/5">
               <ParallaxImg
-                src="/work/village-mall__a.jpg"
+                src={asset('home/about-main.webp')}
                 alt="CanDoor aluminium and glass facade fabrication in progress"
               />
             </div>
@@ -57,7 +58,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <Image
-                src="/work/emirati-kitchen__a.jpg"
+                src={asset('home/about-overlap.webp')}
                 alt="CanDoor interior glass and aluminium fit-out detail"
                 fill
                 sizes="(max-width: 1024px) 50vw, 25vw"

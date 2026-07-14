@@ -14,6 +14,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { services } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import SectionHeader from '@/components/ui/section-header';
 
 const iconMap: Record<string, LucideIcon> = {
@@ -26,12 +27,12 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 const imageMap: Record<string, string> = {
-  'curtain-wall-structural-glazing': '/work/braka-om-building__a.jpg',
-  'doors-windows-partitions': '/work/office-khalidiya__a.jpg',
-  'specialty-designer-glass': '/work/villa-junaibi__b.jpg',
-  'metal-handrail-works': '/work/villa-junaibi__c.jpg',
-  'interior-fit-out-elements': '/work/emirati-kitchen__a.jpg',
-  'pergola-outdoor-structures': '/work/pergola-design__a.jpg',
+  'curtain-wall-structural-glazing': asset('service/hs1.webp'),
+  'doors-windows-partitions': asset('service/hs2.webp'),
+  'specialty-designer-glass': asset('service/hs3.webp'),
+  'metal-handrail-works': asset('service/hs4.webp'),
+  'interior-fit-out-elements': asset('service/hs5.webp'),
+  'pergola-outdoor-structures': asset('service/hs6.webp'),
 };
 
 export default function Services() {

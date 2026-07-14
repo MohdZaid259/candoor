@@ -5,19 +5,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Landmark, Building2, Home, ShoppingBag, Users, Hotel, Factory, Briefcase, ArrowUpRight, type LucideIcon } from 'lucide-react';
 import { industries } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import SectionHeader from '@/components/ui/section-header';
 
 const icons: LucideIcon[] = [Landmark, Building2, Home, ShoppingBag, Users, Hotel, Factory, Briefcase];
 
 const images = [
-  '/work/braka-om-building__a.jpg',
-  '/work/commercial-zaal__a.jpg',
-  '/work/villa-junaibi__a.jpg',
-  '/work/village-mall__a.jpg',
-  '/work/mosque-renovation__a.jpg',
-  '/work/royal-bakery__a.jpg',
-  '/work/warehouse-m11__a.jpg',
-  '/work/daikin-company__a.jpg',
+  asset('home/i1.webp'),
+  asset('home/i2.webp'),
+  asset('home/i3.webp'),
+  asset('home/i4.webp'),
+  asset('home/i5.webp'),
+  asset('home/i6.webp'),
+  asset('home/i7.webp'),
+  asset('home/i8.webp'),
 ];
 
 export default function Industries() {

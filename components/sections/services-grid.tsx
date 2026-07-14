@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { serviceCategories } from '@/lib/data';
+import { asset } from '@/lib/assets';
 import { ParallaxImg, ParallaxBand } from '@/components/ui/parallax';
 import Counter from '@/components/ui/counter';
 
@@ -117,7 +118,7 @@ export default function ServicesGrid() {
 
       {/* Mid-page parallax break */}
       <ParallaxBand
-        image="/work/pergola-design__c.jpg"
+        image={asset('service/mid.webp')}
         alt="CanDoor pergola craftsmanship"
         overlayClassName="bg-foreground/80"
         className="py-24 sm:py-32"

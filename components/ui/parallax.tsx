@@ -35,16 +35,15 @@ export function ParallaxBand({ image, alt = '', overlayClassName, className, chi
             fill
             sizes="100vw"
             className="object-cover"
-            onLoadingComplete={() => {
-              if (logId.current) imageLogger.success(logId.current);
-            }}
-            onError={(error) => {
-              if (logId.current) imageLogger.error(logId.current, error);
-            }}
             onLoad={() => {
               if (!logId.current) {
                 logId.current = imageLogger.startLoad(image, alt, 'ParallaxBand');
+              } else {
+                imageLogger.success(logId.current);
               }
+            }}
+            onError={(error) => {
+              if (logId.current) imageLogger.error(logId.current, error);
             }}
           />
         </motion.div>
@@ -84,16 +83,15 @@ export function ParallaxImg({ src, alt, className, sizes, priority }: ParallaxIm
           priority={priority}
           sizes={sizes ?? '(max-width: 1024px) 100vw, 50vw'}
           className={cn('object-cover', className)}
-          onLoadingComplete={() => {
-            if (logId.current) imageLogger.success(logId.current);
-          }}
-          onError={(error) => {
-            if (logId.current) imageLogger.error(logId.current, error);
-          }}
           onLoad={() => {
             if (!logId.current) {
               logId.current = imageLogger.startLoad(src, alt, 'ParallaxImg');
+            } else {
+              imageLogger.success(logId.current);
             }
+          }}
+          onError={(error) => {
+            if (logId.current) imageLogger.error(logId.current, error);
           }}
         />
       </motion.div>

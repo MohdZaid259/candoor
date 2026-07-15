@@ -13,6 +13,10 @@ import {
   Box,
   Landmark,
   Mail,
+  Utensils,
+  Coffee,
+  School,
+  Trees,
   type LucideIcon,
 } from 'lucide-react';
 import { industriesServed } from '@/lib/data';
@@ -30,6 +34,10 @@ const iconMap: Record<string, LucideIcon> = {
   box: Box,
   archway: Landmark,
   mail: Mail,
+  utensils: Utensils,
+  coffee: Coffee,
+  school: School,
+  trees: Trees,
 };
 
 export default function IndustriesServed() {

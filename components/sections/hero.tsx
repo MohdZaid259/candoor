@@ -110,7 +110,7 @@ export default function Hero() {
             <div className="relative photo-frame corner-notch aspect-4/5 lg:aspect-3/4">
               <ParallaxImg
                 src={heroData.backgroundImage}
-                alt="CanDoor glass facade installation, Abu Dhabi"
+                alt="Cottage interior fit-out and building works, Abu Dhabi"
                 priority
                 className="animate-kenburns"
               />
@@ -133,8 +133,8 @@ export default function Hero() {
                     <ShieldCheck className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-foreground leading-tight">Barakah Nuclear Power Plant</p>
-                    <p className="text-xs text-muted-foreground">Delivered O&M facility glazing</p>
+                    <p className="text-sm font-semibold text-foreground leading-tight">Skilled In-House Teams</p>
+                    <p className="text-xs text-muted-foreground">Fit-out, civil, MEP & maintenance crews</p>
                   </div>
                 </div>
               </div>
@@ -144,8 +144,8 @@ export default function Hero() {
             <div
               className="absolute -top-6 -right-3 sm:-right-6 bg-foreground text-background rounded-xl shadow-xl px-5 py-4"
             >
-              <Counter value="15+" className="block text-2xl font-bold font-serif text-accent" />
-              <p className="text-[0.65rem] uppercase tracking-wider text-background/70 mt-0.5">Years of Craft</p>
+              <Counter value="360°" className="block text-2xl font-bold font-serif text-accent" />
+              <p className="text-[0.65rem] uppercase tracking-wider text-background/70 mt-0.5">Turnkey Delivery</p>
             </div>
           </motion.div>
         </div>

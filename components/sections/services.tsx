@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  Building2,
-  DoorOpen,
-  Gem,
-  MoveVertical,
   LayoutPanelLeft,
-  Sun,
+  HardHat,
+  Gem,
+  Layers,
+  Zap,
+  Wrench,
   ArrowRight,
   type LucideIcon,
 } from 'lucide-react';
@@ -18,21 +18,21 @@ import { asset } from '@/lib/assets';
 import SectionHeader from '@/components/ui/section-header';
 
 const iconMap: Record<string, LucideIcon> = {
-  'building-2': Building2,
-  'door-open': DoorOpen,
-  gem: Gem,
-  'move-vertical': MoveVertical,
   'layout-panel-left': LayoutPanelLeft,
-  sun: Sun,
+  'hard-hat': HardHat,
+  gem: Gem,
+  layers: Layers,
+  zap: Zap,
+  wrench: Wrench,
 };
 
 const imageMap: Record<string, string> = {
-  'curtain-wall-structural-glazing': asset('service/hs1.webp'),
-  'doors-windows-partitions': asset('service/hs2.webp'),
-  'specialty-designer-glass': asset('service/hs3.webp'),
-  'metal-handrail-works': asset('service/hs4.webp'),
-  'interior-fit-out-elements': asset('service/hs5.webp'),
-  'pergola-outdoor-structures': asset('service/hs6.webp'),
+  'interior-fit-out': asset('service/hs2.webp'),
+  'civil-works': asset('about/mission.webp'),
+  'marble-tile-works': asset('service/hs3.webp'),
+  'gypsum-works': asset('home/i6.webp'),
+  'mep-services': asset('home/why.webp'),
+  'facility-maintenance': asset('home/cta.webp'),
 };
 
 export default function Services() {
@@ -62,7 +62,7 @@ export default function Services() {
         <SectionHeader
           eyebrow="What We Offer"
           title="Our Services"
-          description="Complete aluminium and glass fabrication and installation, engineered end to end"
+          description="Twelve integrated trades — fit-out, civil works, finishes, MEP, and maintenance — under one roof"
           ghost="Services"
         />
 
@@ -75,8 +75,8 @@ export default function Services() {
           viewport={{ once: true, margin: '-100px' }}
         >
           {services.map((service, index) => {
-            const Icon = iconMap[service.icon] ?? Building2;
-            const image = imageMap[service.slug] ?? '/work/cover-hero__hero.jpg';
+            const Icon = iconMap[service.icon] ?? LayoutPanelLeft;
+            const image = imageMap[service.slug] ?? asset('home/hero.webp');
             return (
               <motion.div
                 key={service.id}

@@ -101,8 +101,8 @@ function ServiceRow({ service, index }: { service: (typeof serviceCategories)[nu
 }
 
 export default function ServicesGrid() {
-  const firstHalf = serviceCategories.slice(0, 3);
-  const secondHalf = serviceCategories.slice(3);
+  const firstHalf = serviceCategories.slice(0, 6);
+  const secondHalf = serviceCategories.slice(6);
 
   return (
     <>
@@ -119,7 +119,7 @@ export default function ServicesGrid() {
       {/* Mid-page parallax break */}
       <ParallaxBand
         image={asset('service/mid.webp')}
-        alt="CanDoor pergola craftsmanship"
+        alt="Cottage skilled trades at work"
         overlayClassName="bg-foreground/80"
         className="py-24 sm:py-32"
       >
@@ -130,19 +130,19 @@ export default function ServicesGrid() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
-            <span className="eyebrow justify-center">Fabricated In-House</span>
+            <span className="eyebrow justify-center">Delivered In-House</span>
             <h2 className="text-4xl lg:text-5xl font-bold text-background mt-4 mb-6 max-w-3xl mx-auto">
-              Precision Fabricated. <span className="text-accent">Installed With Care.</span>
+              One Team. <span className="text-accent">Every Trade.</span>
             </h2>
             <p className="text-lg text-background/70 max-w-2xl mx-auto mb-10">
-              Every system is fabricated in our Musaffah facility under defined quality-control procedures — then
-              installed by the same team that built it.
+              Every discipline is delivered by our own skilled crews under one project management team — one
+              standard of workmanship from the first trade to the last.
             </p>
             <div className="flex flex-wrap justify-center gap-10 sm:gap-16">
               {[
-                { number: '15+', label: 'Years of Craft' },
-                { number: '20+', label: 'Projects Delivered' },
-                { number: '6', label: 'Service Disciplines' },
+                { number: '12+', label: 'Trades In-House' },
+                { number: '14+', label: 'Industries Served' },
+                { number: '100%', label: 'Turnkey Delivery' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <Counter value={stat.number} className="block text-4xl font-bold font-serif text-accent mb-1" />

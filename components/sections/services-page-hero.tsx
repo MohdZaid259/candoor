@@ -30,7 +30,7 @@ export default function ServicesPageHero() {
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
           src={servicesPageHero.backgroundImage}
-          alt="CanDoor aluminium and glass fabrication"
+          alt="Cottage building services in progress"
           fill
           priority
           sizes="100vw"

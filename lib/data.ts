@@ -1,18 +1,13 @@
 import { asset } from "./assets";
 
 export const companyData = {
-  name: "CanDoor Glass Partitions LLC",
-  shortName: "CanDoor",
-  tagline: "Transparent Solutions. Stronger Spaces.",
-  subTagline: "Designed for Elegance. Built for Life.",
+  name: "Cottage Interior Decor & Building Maintenance L.L.C. S.P.C.",
+  shortName: "Cottage",
+  tagline: "Spaces Transformed. Buildings Maintained.",
+  subTagline: "From Design Support to Execution & Aftercare.",
   description:
-    "CanDoor Glass Partitions LLC is committed to delivering premium glass, aluminium, pergola, and architectural solutions with exceptional quality, precision, and professionalism. Through innovative designs, skilled craftsmanship, and dedicated customer service, we continue to transform residential, commercial, and industrial spaces across the UAE.",
-  foundedNote: "Formerly Ziyad Aluminium & Glass L.L.C",
-  founder: {
-    name: "Harjinder Singh Saggu",
-    title: "Founder & Director",
-    bio: "As the visionary behind CanDoor Glass Partitions LLC, Harjinder Singh Saggu brings a wealth of experience, technical expertise, and design intuition to every project. With education upgraded in Canada as a Renovation and Construction Technician, he gained tremendous knowledge about the Canadian market in terms of acoustic performance standards, modular system integration, and sustainable materials. With over 15 years in the glass and aluminium industry, he has led the company from its early beginnings to a growing international presence.",
-  },
+    "Cottage Interior Decor & Building Maintenance L.L.C. S.P.C. is an Abu Dhabi-based company specializing in interior fit-out, building maintenance, renovation, civil works, MEP services, and project execution for residential, commercial, retail, hospitality, government, and industrial sectors. We deliver complete turnkey solutions — from design support to execution and maintenance — with skilled in-house manpower and experienced project management.",
+  foundedNote: "Interior Fit-Out • Civil Works • MEP • Facility Maintenance",
 };
 
 export const navItems = [
@@ -24,232 +19,236 @@ export const navItems = [
 ];
 
 export const heroData = {
-  eyebrow: "Aluminium & Glass Fabrication — Abu Dhabi, UAE",
-  title: "Transparent Solutions.\nStronger Spaces.",
+  eyebrow: "Interior Fit-Out & Building Maintenance — Abu Dhabi, UAE",
+  title: "Spaces Transformed.\nBuildings Maintained.",
   subtitle:
-    "Premium aluminium and glass fabrication and installation — curtain walls, structural glazing, partitions, and architectural systems engineered for elegance and built to last.",
+    "Complete turnkey solutions — interior fit-out, renovation, civil works, MEP, and facility maintenance — delivered end to end by skilled in-house teams.",
   ctaPrimary: "Start Your Project",
   ctaSecondary: "View Our Work",
   backgroundImage: asset("home/hero.webp"),
   stats: [
-    { number: "15+", label: "Years in the Industry" },
-    { number: "20+", label: "Projects Delivered" },
-    { number: "AED 24M+", label: "Project Value Delivered" },
-    { number: "UAE & Canada", label: "Markets Served" },
+    { number: "12+", label: "Integrated Service Lines" },
+    { number: "14+", label: "Industries Served" },
+    { number: "100%", label: "In-House Manpower" },
+    { number: "AMC", label: "Maintenance Contracts" },
   ],
 };
 
 export const aboutData = {
   eyebrow: "Who We Are",
-  title: "A Can-Do Spirit, Built Into Every Space",
+  title: "One Team, From Fit-Out to Facility Care",
   description:
-    "We've always believed that a well-designed space can do more than divide — it can connect. With CanDoor, our mission is to create environments that are elegant, high-performing, and built to last. Our evolution from Ziyad Aluminium & Glass L.L.C to CanDoor Glass Partitions LLC represents more than a rebrand — it reflects our readiness to serve global markets, including Canada, the UAE, and beyond, while staying true to our values of quality, craftsmanship, and client-focused service.",
+    "We believe a space should be built well and kept well. Cottage Interior Decor & Building Maintenance brings design support, fit-out, civil works, MEP, and ongoing maintenance under one roof — so clients deal with a single accountable team from the first site survey to years after handover. With skilled in-house manpower and experienced project management, we deliver quality workmanship on time and at competitive prices, across every sector we serve.",
   highlights: [
-    { number: "15+", label: "Years of Excellence" },
-    { number: "20+", label: "Projects Completed" },
-    { number: "AED 24M+", label: "Project Value Delivered" },
-    { number: "2", label: "Countries Served" },
+    { number: "12+", label: "Service lines under one roof" },
+    { number: "14+", label: "Industries served across the UAE" },
+    { number: "360°", label: "Turnkey delivery, design to handover" },
+    { number: "AMC", label: "Annual contracts & emergency repairs" },
   ],
 };
 
+// Home page services (top 6 of our 12 disciplines)
 export const services = [
   {
     id: 1,
-    slug: "curtain-wall-structural-glazing",
-    title: "Curtain Wall & Structural Glazing",
+    slug: "interior-fit-out",
+    title: "Interior Fit-Out",
     description:
-      "High-performance building envelopes engineered for scale — from unitized facades to full structural glazing systems.",
-    icon: "building-2",
+      "Complete turnkey fit-out for offices, restaurants, cafés, retail shops, villas, and apartments — from design support to handover.",
+    icon: "layout-panel-left",
     features: [
-      "Aluminium Curtain Wall",
-      "Structural Glazing",
-      "Aluminium Thermal Break Sections",
-      "Aluminium Composite Cladding",
+      "Office, Restaurant & Retail Fit-Out",
+      "Villa & Apartment Renovation",
+      "Reception Areas",
+      "Exhibition & Event Structures",
     ],
   },
   {
     id: 2,
-    slug: "doors-windows-partitions",
-    title: "Doors, Windows & Partitions",
+    slug: "civil-works",
+    title: "Civil Works",
     description:
-      "Thermal and non-thermal aluminium systems, frameless glass, and smart partition solutions for modern interiors.",
-    icon: "door-open",
+      "Block work, plastering, concrete, interlock, kerbstone, road repair, excavation, trenching, and foundation works.",
+    icon: "hard-hat",
     features: [
-      "Aluminium Doors & Windows (Thermal & Non-Thermal)",
-      "Frameless Glass Jobs",
-      "Glass Partitions",
-      "Smart Windows & Door Systems",
+      "Block Work, Plastering & Concrete",
+      "Interlock & Kerbstone Installation",
+      "Excavation, Trenching & Foundations",
     ],
   },
   {
     id: 3,
-    slug: "specialty-designer-glass",
-    title: "Specialty & Designer Glass",
+    slug: "marble-tile-works",
+    title: "Marble & Tile Works",
     description:
-      "Toughened, laminated and double-glazed glass finished to premium standards for demanding residential and commercial spaces.",
+      "Marble, granite, porcelain, and travertine installation — plus bench fabrication, staircase and wall cladding.",
     icon: "gem",
     features: [
-      "Double Glazed Glass",
-      "Mirror Glass",
-      "Designer Glass",
-      "Toughened & Laminated Glass",
-      "Shower Doors",
+      "Marble, Granite & Porcelain Installation",
+      "Staircase & Wall Cladding",
+      "Bench Fabrication",
     ],
   },
   {
     id: 4,
-    slug: "metal-handrail-works",
-    title: "Metal & Handrail Works",
+    slug: "gypsum-works",
+    title: "Gypsum & Ceiling Works",
     description:
-      "Precision-fabricated stainless steel and aluminium handrail systems combining safety with architectural detail.",
-    icon: "move-vertical",
+      "Gypsum partitions, suspended and decorative ceilings, bulkheads, and acoustic ceiling systems.",
+    icon: "layers",
     features: [
-      "Stainless Steel & Aluminium Handrails",
-      "Stainless Steel & Glass Handrail",
-      "Custom Metal Fabrication",
+      "Gypsum Partitions",
+      "Suspended & Decorative Ceilings",
+      "Bulkheads & Acoustic Ceilings",
     ],
   },
   {
     id: 5,
-    slug: "interior-fit-out-elements",
-    title: "Interior Fit-Out Elements",
+    slug: "mep-services",
+    title: "MEP Services",
     description:
-      "Custom aluminium and glass interior fixtures finished to match the precision of our architectural work.",
-    icon: "layout-panel-left",
+      "Electrical, plumbing, drainage, and water supply works — DB installation, lighting, power distribution, and pumps.",
+    icon: "zap",
     features: [
-      "Aluminium Kitchen Cabinets",
-      "Glass Partitions, Table Tops & Counters",
+      "Electrical Works & DB Installation",
+      "Plumbing, Drainage & Water Supply",
+      "Lighting, Power Distribution & Pumps",
     ],
   },
   {
     id: 6,
-    slug: "pergola-outdoor-structures",
-    title: "Pergola & Outdoor Structures",
+    slug: "facility-maintenance",
+    title: "Facility Maintenance",
     description:
-      "Bespoke aluminium pergolas and outdoor living structures designed for the UAE climate.",
-    icon: "sun",
+      "Annual Maintenance Contracts, emergency repairs, preventive maintenance, and building inspections.",
+    icon: "wrench",
     features: [
-      "Custom Pergola Design & Installation",
-      "Outdoor Living Structures",
-      "Villa & Residential Outdoor Spaces",
+      "Annual Maintenance Contracts (AMC)",
+      "Emergency Repairs",
+      "Preventive Maintenance & Inspections",
     ],
   },
 ];
 
 export const whyChooseUs = [
   {
-    title: "15+ Years of Craftsmanship",
+    title: "Turnkey Solutions",
     description:
-      "Led by Founder & Director Harjinder Singh Saggu, with over 15 years of hands-on experience in the glass and aluminium industry.",
+      "One accountable team from design support through execution to aftercare — no juggling multiple contractors.",
   },
   {
-    title: "Canadian-Trained Expertise",
+    title: "Experienced Project Management",
     description:
-      "Technical knowledge of acoustic performance standards, modular system integration, and sustainable materials from the Canadian market.",
+      "Structured planning, coordination, and reporting that keep every trade moving and every milestone on track.",
   },
   {
-    title: "A Heritage of Evolution",
+    title: "Skilled In-House Workforce",
     description:
-      "From Ziyad Aluminium & Glass L.L.C to CanDoor Glass Partitions LLC — a rebrand reflecting readiness to serve global markets.",
+      "Our own fit-out, civil, MEP, and finishing crews — quality we control directly, not subcontracted away.",
   },
   {
-    title: "Government & Institutional Trust",
+    title: "High-Quality Workmanship",
     description:
-      "Delivered facilities for Barakah Nuclear Power Plant and Emirates Post, alongside major private and commercial developments.",
+      "Defined quality-assurance checks at every stage, from material selection to final snagging and handover.",
   },
   {
-    title: "Rigorous Quality Control",
+    title: "Timely Completion",
     description:
-      "A dedicated Quality Control team with defined procedures, continuously reviewed and upgraded to meet the latest standards.",
+      "Realistic programmes and disciplined execution so your space opens — and stays open — on schedule.",
   },
   {
-    title: "Uncompromising Safety",
+    title: "Competitive Pricing",
     description:
-      "A full Health & Safety policy built on risk assessment, safe systems of work, and continuous workforce training.",
+      "In-house delivery keeps overheads lean, letting us price competitively without cutting corners.",
   },
   {
-    title: "Client-Focused Service",
+    title: "Safety Compliance",
     description:
-      "The 'can-do' spirit drives every project — transparent communication from first consultation through final handover.",
+      "Safe systems of work, trained crews, and full compliance with UAE safety regulations on every site.",
   },
   {
-    title: "End-to-End Capability",
+    title: "Quality Assurance",
     description:
-      "From structural glazing and curtain walls to cladding, handrails, and custom joinery — one team, every discipline.",
+      "Structured QA at every stage — material inspection, stage checks, and snagging — documented before handover.",
+  },
+  {
+    title: "Reliable After-Sales Service",
+    description:
+      "AMCs, preventive maintenance, and emergency repairs — we stand behind our work long after handover.",
   },
 ];
 
 export const industries = [
   {
-    name: "Government & Public Sector",
-    description: "Federal and utility facilities including nuclear power plant operations buildings and postal infrastructure.",
+    name: "Government",
+    description: "Fit-out, renovation, and maintenance for government buildings and public-sector facilities.",
   },
   {
-    name: "Commercial & Office Towers",
-    description: "Multi-storey commercial buildings and corporate headquarters across Abu Dhabi and Dubai.",
+    name: "Commercial & Offices",
+    description: "Complete office fit-outs, reception areas, and commercial building renovation and upkeep.",
   },
   {
-    name: "Residential & Private Villas",
-    description: "Bespoke glass and aluminium detailing for luxury private residences.",
+    name: "Villas & Residential",
+    description: "Villa and apartment renovation — from single rooms to full turnkey transformations.",
   },
   {
-    name: "Retail & Malls",
-    description: "Large-format retail and mixed-use developments with facade and glazing systems built for scale.",
+    name: "Retail",
+    description: "Retail shop fit-outs and maintenance built around fast timelines and minimal downtime.",
   },
   {
-    name: "Religious & Community",
-    description: "Sensitive renovation works for mosques and community landmarks.",
+    name: "Mosques & Community",
+    description: "Sensitive renovation and maintenance works for mosques and community facilities.",
   },
   {
-    name: "Hospitality",
-    description: "Fit-out and facade works for hospitality facilities, including the Emirates Palace Hotel.",
+    name: "Restaurants, Cafés & Hotels",
+    description: "F&B and hospitality fit-outs that balance design, durability, and operational flow.",
   },
   {
-    name: "Industrial & Warehousing",
-    description: "Warehouse and office facilities engineered for durability and daily operational demands.",
+    name: "Warehouses & Industrial",
+    description: "Civil works, MEP, and maintenance for warehouses and industrial facilities.",
   },
   {
-    name: "Corporate Offices",
-    description: "Facade and interior glazing for corporate occupiers including Daikin and regional contractors.",
+    name: "Schools & Public Facilities",
+    description: "Renovation and maintenance for schools, public parks, and community infrastructure.",
   },
 ];
 
 export const processSteps = [
   {
     step: 1,
-    title: "Consultation",
-    description: "In-depth discussion of your vision, requirements, budget, and timeline to establish clear expectations.",
+    title: "Consultation & Site Survey",
+    description: "We visit your site, understand your requirements, and establish scope, budget, and timeline.",
   },
   {
     step: 2,
-    title: "Design & Specification",
-    description: "Detailed system design, material specification, and technical drawings prepared for approval.",
+    title: "Design Support & Quotation",
+    description: "Layouts, material options, and a clear, itemized quotation — so you know exactly what you're getting.",
   },
   {
     step: 3,
-    title: "Material Inspection",
-    description: "Every material batch inspected against our Quality Control procedures before fabrication begins.",
+    title: "Materials & Approvals",
+    description: "Material selection, samples, and any required approvals handled before work begins.",
   },
   {
     step: 4,
-    title: "Fabrication & Execution",
-    description: "Precision fabrication and on-site installation carried out under continuous safety and quality supervision.",
+    title: "Execution",
+    description: "Our in-house civil, fit-out, and MEP crews deliver the works under continuous supervision.",
   },
   {
     step: 5,
-    title: "Testing & Quality Checks",
-    description: "Rigorous testing and inspection at every phase, reviewed by our dedicated Quality Control team.",
+    title: "Quality Checks & Snagging",
+    description: "Stage-by-stage inspections and a full snagging pass before we call anything finished.",
   },
   {
     step: 6,
-    title: "Final Handover",
-    description: "Final inspections, documentation, and handover — with ongoing support after project completion.",
+    title: "Handover & Aftercare",
+    description: "Clean handover with documentation — and AMC, preventive maintenance, and emergency support after.",
   },
 ];
 
 export const ctaData = {
-  title: "Ready to Build Something Stronger?",
-  description: "Let our team bring premium glass and aluminium craftsmanship to your next project.",
+  title: "Ready to Transform Your Space?",
+  description: "From a single room renovation to a full turnkey fit-out — let's talk about your project.",
   primaryCta: "Schedule Consultation",
   secondaryCta: "View Our Projects",
 };
@@ -262,10 +261,10 @@ export const footerLinks = {
     { label: "Contact", href: "/contact" },
   ],
   services: [
-    { label: "Curtain Wall & Glazing", href: "/services#curtain-wall-structural-glazing" },
-    { label: "Doors & Partitions", href: "/services#doors-windows-partitions" },
-    { label: "Specialty Glass", href: "/services#specialty-designer-glass" },
-    { label: "Metal & Handrails", href: "/services#metal-handrail-works" },
+    { label: "Interior Fit-Out", href: "/services#interior-fit-out" },
+    { label: "Civil Works", href: "/services#civil-works" },
+    { label: "MEP Services", href: "/services#mep-services" },
+    { label: "Facility Maintenance", href: "/services#facility-maintenance" },
   ],
   support: [
     { label: "FAQ", href: "/contact#faq" },
@@ -274,35 +273,37 @@ export const footerLinks = {
   ],
 };
 
+// TODO: Replace all placeholder contact details below with the company's real
+// phone, email, address, and website before going live.
 export const contactInfo = {
-  phone: "+971 50 622 1845",
-  phoneHref: "tel:+971506221845",
-  whatsappHref: "https://wa.me/971506221845",
-  email: "info@candoor.ae",
-  address: "M-40, Musaffah, Abu Dhabi, United Arab Emirates",
-  mapsHref: "https://www.google.com/maps/search/?api=1&query=M-40+Musaffah+Abu+Dhabi+United+Arab+Emirates",
-  website: "www.candoor.ae",
+  phone: "+971 X XXX XXXX",
+  phoneHref: "tel:+971XXXXXXX",
+  whatsappHref: "https://wa.me/971XXXXXXXXX",
+  email: "info@cottagedecor.ae",
+  address: "Abu Dhabi, United Arab Emirates",
+  mapsHref: "https://www.google.com/maps/search/?api=1&query=Abu+Dhabi+United+Arab+Emirates",
+  website: "www.cottagedecor.ae",
 };
 
 // ABOUT PAGE DATA
 export const aboutPageHero = {
-  eyebrow: "About CanDoor",
-  title: "Transparent Solutions, Stronger Spaces",
+  eyebrow: "About Cottage",
+  title: "Built Well. Kept Well.",
   description:
-    "From Ziyad Aluminium & Glass to CanDoor Glass Partitions LLC — a can-do spirit driving premium glass and aluminium craftsmanship across the UAE.",
+    "An Abu Dhabi-based interior fit-out and building maintenance company delivering complete turnkey solutions with skilled in-house manpower.",
   backgroundImage: asset("about/hero.webp"),
 };
 
 export const companyOverview = {
   image: asset("about/story.webp"),
   eyebrow: "Our Story",
-  title: "The Can-Do Spirit",
+  title: "Turnkey, From Day One",
   description:
-    "We've always believed that a well-designed space can do more than divide — it can connect. With CanDoor, our mission is to create environments that are elegant, high-performing, and built to last. Our evolution from Ziyad Aluminium & Glass L.L.C to CanDoor Glass Partitions LLC represents more than a rebrand. It reflects our readiness to serve global markets, including Canada, the UAE, and beyond, while staying true to our values of quality, craftsmanship, and client-focused service.\n\nThe name CanDoor captures our mindset perfectly: the \"can-do\" spirit that drives us forward, and our core focus on premium glass and aluminium door and partition systems that bring elegance, function, and acoustic comfort to modern spaces.",
+    "Cottage Interior Decor & Building Maintenance L.L.C. S.P.C. was built around a simple observation: most projects go wrong in the gaps between contractors. So we removed the gaps. Our in-house teams cover interior fit-out, civil works, marble and tile, gypsum, painting, MEP, waterproofing, joinery, aluminium and glass, metal fabrication, and signage — with facility maintenance to keep it all performing after handover.\n\nFor our clients, that means one point of contact, one accountable team, and one consistent standard of workmanship — whether we're fitting out a restaurant, renovating a villa, or maintaining a government facility under an annual contract.",
   founderQuote:
-    "As the visionary behind CanDoor Glass Partitions LLC, Harjinder Singh Saggu brings a wealth of experience, technical expertise, and design intuition to every project. With education upgraded in Canada as a Renovation and Construction Technician, he gained tremendous knowledge about the Canadian market in terms of acoustic performance standards, modular system integration, and sustainable materials — and with over 15 years in the glass and aluminium industry, he has led the company from its early beginnings to a growing international presence.",
-  founderName: "Harjinder Singh Saggu",
-  founderTitle: "Founder & Director",
+    "Our promise is simple: we treat every project as if we'll be the ones maintaining it — because we usually are. That changes how you build. Materials are chosen to last, details are finished properly, and handover is the start of a relationship, not the end of one.",
+  founderName: "The Management Team",
+  founderTitle: "Cottage Interior Decor & Building Maintenance",
   cta: "Start Your Project",
 };
 
@@ -311,45 +312,47 @@ export const visionMission = [
     type: "vision",
     title: "Our Vision",
     description:
-      "With a comprehensive strategy, CanDoor is step by step affirming ourselves to be the top aluminium & glass fabrication and installation company in the UAE. We desire to rise higher in the international market and become the believable partner of domestic as well as international investors.",
+      "To be the contractor Abu Dhabi trusts by default — the one team clients call whether they need a space designed, built, renovated, or maintained. We aim to grow across the UAE on the strength of finished work and long-term client relationships.",
   },
   {
     type: "mission",
     title: "Our Mission",
     description:
-      "Fabricate and install aluminium & glass products, unitized and semi-unitized facades, aluminium cladding products, and smart windows and doors systems for domestic and international projects. Develop high-tech professional, skillful staff, build up more factories to meet output capacity, and contribute to the human resource development of the whole society.",
+      "Deliver complete turnkey fit-out, renovation, civil, and MEP solutions with skilled in-house manpower — on time, at competitive prices, and to a standard we are proud to maintain. Support every handover with reliable after-sales service and structured maintenance programmes.",
   },
 ];
 
 export const coreValues = [
-  { title: "Integrity", description: "Honest communication and transparent practices in all our dealings." },
-  { title: "Quality", description: "Commitment to superior craftsmanship and premium materials." },
-  { title: "Safety", description: "Unwavering dedication to safety standards and best practices." },
-  { title: "Innovation", description: "Continuous advancement through new ideas and modern techniques." },
-  { title: "Reliability", description: "Consistent delivery and dependable service on every project." },
-  { title: "Client Satisfaction", description: "Your success and satisfaction is our ultimate goal." },
+  { title: "Integrity", description: "Honest communication, transparent pricing, and no surprises." },
+  { title: "Quality", description: "Workmanship and materials we are willing to maintain for years." },
+  { title: "Safety", description: "Full compliance and safe systems of work on every site." },
+  { title: "Reliability", description: "We show up, we finish on time, and we answer the phone after handover." },
+  { title: "Craftsmanship", description: "Skilled in-house trades, not the cheapest available subcontractor." },
+  { title: "Client Satisfaction", description: "Your space working the way you need it to — that's the finish line." },
 ];
 
 export const aboutWhyChooseUs = whyChooseUs;
 
 export const industriesServed = [
   { name: "Government", icon: "building-2" },
-  { name: "Nuclear & Utilities", icon: "factory" },
-  { name: "Commercial Towers", icon: "briefcase" },
-  { name: "Corporate Offices", icon: "monitor" },
-  { name: "Retail & Malls", icon: "shopping-bag" },
-  { name: "Hospitality", icon: "hotel" },
-  { name: "Private Villas", icon: "home" },
+  { name: "Commercial Buildings", icon: "building" },
+  { name: "Offices", icon: "monitor" },
+  { name: "Retail", icon: "shopping-bag" },
+  { name: "Restaurants", icon: "utensils" },
+  { name: "Cafés", icon: "coffee" },
+  { name: "Hotels", icon: "hotel" },
+  { name: "Villas", icon: "home" },
   { name: "Residential Buildings", icon: "building" },
   { name: "Warehouses", icon: "box" },
   { name: "Industrial Facilities", icon: "factory" },
+  { name: "Schools", icon: "school" },
   { name: "Mosques", icon: "archway" },
-  { name: "Postal & Federal", icon: "mail" },
+  { name: "Public Parks", icon: "trees" },
 ];
 
 export const hsePoints = [
   { title: "Risk Assessments", description: "Suitable and sufficient risk assessments carried out before every project." },
-  { title: "Accident Investigation", description: "Every accident and near-hit investigated to determine causes and prevent recurrence." },
+  { title: "Incident Investigation", description: "Every incident and near-miss investigated to determine causes and prevent recurrence." },
   { title: "Safe Plant & Equipment", description: "All plant and equipment maintained to a safe, reliable operating standard." },
   { title: "Safe Systems of Work", description: "Documented safe systems of work applied consistently across every site." },
   { title: "Training & Supervision", description: "Adequate supervision, training, instruction, and information for every employee." },
@@ -358,7 +361,7 @@ export const hsePoints = [
 export const safetyPolicy = {
   title: "Safety Policy Statement",
   intro:
-    "CanDoor Glass Partitions L.L.C is totally committed to the promotion of Health & Safety. Our Directors provide, as far as is reasonably practicable, the necessary leadership and resources required to maintain health and safety. The company recognizes that Health & Safety is a business function and must, therefore, continually progress and change. Our approach to safety is based upon the identification and control of risks.",
+    "Cottage Interior Decor & Building Maintenance L.L.C. S.P.C. is totally committed to the promotion of Health & Safety. Management provides, as far as is reasonably practicable, the leadership and resources required to maintain health and safety on every site. We recognize that Health & Safety is a business function that must continually progress and change — our approach is based on the identification and control of risks.",
   commitments: [
     "Constantly improving Health & Safety standards and performance.",
     "Ensuring all relevant statutes, regulations and Codes of Practice are complied with.",
@@ -379,15 +382,15 @@ export const safetyPolicy = {
 };
 
 export const qualityAssurance = {
-  eyebrow: "Quality Control",
-  title: "Quality, Sustained",
+  eyebrow: "Quality Assurance",
+  title: "Quality, Checked at Every Stage",
   description:
-    "Quality is the feature of CanDoor Glass Partitions' sustained growth and success. We keep in touch with the latest developments within our scope of works and modify our workmanship by adapting the latest technology and materials developments to give clients full satisfaction in terms of quality and services. Using defined quality control procedures, we ensure compliance with standards in all our facilities and work sites — developed by our Quality Control team and continuously reviewed and upgraded.",
+    "Quality is what makes turnkey delivery work. Because our own teams handle every trade, we apply one consistent standard across the whole project — with defined checks from material selection through execution to final snagging. We keep pace with the latest materials and methods so clients get full satisfaction in both quality and service.",
   steps: [
     { step: "Material Inspection", order: 1 },
     { step: "Execution", order: 2 },
-    { step: "Quality Checks", order: 3 },
-    { step: "Testing", order: 4 },
+    { step: "Stage Quality Checks", order: 3 },
+    { step: "Snagging", order: 4 },
     { step: "Final Handover", order: 5 },
   ],
 };
@@ -395,86 +398,176 @@ export const qualityAssurance = {
 // SERVICES PAGE DATA
 export const servicesPageHero = {
   eyebrow: "Our Services",
-  title: "Aluminium & Glass, Engineered End to End",
+  title: "Twelve Trades. One Accountable Team.",
   description:
-    "From structural glazing and curtain walls to custom joinery and pergolas — a complete range of aluminium and glass fabrication and installation services.",
+    "Interior fit-out, civil works, MEP, finishes, and facility maintenance — a complete range of building services delivered turnkey by in-house crews.",
   backgroundImage: asset("service/hero.webp"),
 };
 
 export const serviceCategories = [
   {
-    id: "curtain-wall-structural-glazing",
-    title: "Curtain Wall & Structural Glazing",
+    id: "interior-fit-out",
+    title: "Interior Fit-Out",
     description:
-      "High-performance building envelopes engineered for scale — from unitized and semi-unitized facades to full structural glazing systems, built to withstand the UAE climate.",
-    image: asset("service/s1.webp"),
-    features: [
-      "Aluminium Curtain Wall",
-      "Structural Glazing",
-      "Aluminium Thermal Break Sections",
-      "Aluminium Composite Sheet Metal Work (Cladding)",
-    ],
-  },
-  {
-    id: "doors-windows-partitions",
-    title: "Doors, Windows & Partitions",
-    description:
-      "Thermal and non-thermal aluminium door and window systems, frameless glass jobs, and glass partitions engineered for elegance, function, and acoustic comfort.",
+      "Complete turnkey fit-out for offices, restaurants, cafés, retail shops, villas, and apartments — including reception areas and exhibition or event structures. From design support to handover, one team delivers it all.",
     image: asset("service/s2.webp"),
     features: [
-      "Aluminium Doors & Windows (Thermal & Non-Thermal)",
-      "Frameless Glass Jobs",
-      "Glass Partitions",
-      "Smart Windows & Door Systems",
+      "Complete Office Fit-Out",
+      "Restaurant & Café Fit-Out",
+      "Retail Shop Fit-Out",
+      "Villa & Apartment Renovation",
+      "Reception Areas",
+      "Exhibition & Event Structures",
     ],
   },
   {
-    id: "specialty-designer-glass",
-    title: "Specialty & Designer Glass",
+    id: "civil-works",
+    title: "Civil Works",
     description:
-      "Toughened, laminated, and double-glazed glass finished to premium standards — from shower enclosures to mirror and designer glass installations.",
+      "Structural and external works handled by our own civil crews — from block work and concrete to roads, excavation, and foundations.",
+    image: asset("about/mission.webp"),
+    features: [
+      "Block Work & Plastering",
+      "Concrete Works",
+      "Interlock & Kerbstone Installation",
+      "Road Repair",
+      "Excavation & Trenching",
+      "Foundation Works",
+    ],
+  },
+  {
+    id: "marble-tile-works",
+    title: "Marble & Tile Works",
+    description:
+      "Natural stone and tile installation finished to premium standards — marble, granite, porcelain, and travertine, plus fabrication and cladding.",
     image: asset("service/s3.webp"),
     features: [
-      "Double Glazed Glass",
-      "Mirror Glass",
-      "Designer Glass",
-      "Toughened and Laminated Glass",
-      "Shower Doors",
+      "Marble & Granite Installation",
+      "Porcelain Tile Installation",
+      "Travertine Installation",
+      "Bench Fabrication",
+      "Staircase & Wall Cladding",
     ],
   },
   {
-    id: "metal-handrail-works",
-    title: "Metal & Handrail Works",
+    id: "gypsum-works",
+    title: "Gypsum & Ceiling Works",
     description:
-      "Precision-fabricated stainless steel and aluminium handrail systems that combine structural safety with architectural detail.",
-    image: asset("service/s4.webp"),
+      "Partitions and ceilings that define interior spaces — from clean suspended grids to decorative and acoustic ceiling features.",
+    image: asset("home/i6.webp"),
     features: [
-      "Stainless Steel & Aluminium Hand Rails",
-      "Stainless Steel & Glass Handrail",
-      "Custom Metal Fabrication",
+      "Gypsum Partitions",
+      "Suspended Ceilings",
+      "Decorative Ceilings",
+      "Bulkheads",
+      "Acoustic Ceilings",
     ],
   },
   {
-    id: "interior-fit-out-elements",
-    title: "Interior Fit-Out Elements",
+    id: "painting-works",
+    title: "Painting Works",
     description:
-      "Custom aluminium and glass interior fixtures — kitchen cabinets, table tops, and counters — finished to match the precision of our architectural work.",
+      "Interior and exterior painting with the right coating for every surface — including textures, waterproof coatings, and protective systems.",
+    image: asset("home/about-main.webp"),
+    features: [
+      "Interior Painting",
+      "Exterior Painting",
+      "Texture Paint",
+      "Waterproof Coatings",
+      "Protective Coatings",
+    ],
+  },
+  {
+    id: "mep-services",
+    title: "MEP Services",
+    description:
+      "Electrical, plumbing, and drainage works delivered by qualified in-house technicians — from DB installation to pumps and power distribution.",
+    image: asset("home/why.webp"),
+    features: [
+      "Electrical Works & DB Installation",
+      "Plumbing & Drainage",
+      "Water Supply",
+      "Lighting & Power Distribution",
+      "Pump Installation",
+    ],
+  },
+  {
+    id: "waterproofing",
+    title: "Waterproofing",
+    description:
+      "Protection where buildings need it most — roofs, wet areas, and basements, including injection waterproofing for existing structures.",
+    image: asset("home/i7.webp"),
+    features: [
+      "Roof Waterproofing",
+      "Wet Area Waterproofing",
+      "Basement Waterproofing",
+      "Injection Waterproofing",
+    ],
+  },
+  {
+    id: "joinery",
+    title: "Joinery & Carpentry",
+    description:
+      "Custom woodwork fabricated and installed to fit — cabinets, doors, wardrobes, reception counters, and bespoke wooden features.",
     image: asset("service/s5.webp"),
     features: [
-      "Aluminium Kitchen Cabinets",
-      "Glass Partition, Table Top & Counters",
+      "Cabinets & Wardrobes",
+      "Doors",
+      "Reception Counters",
+      "Custom Wooden Features",
     ],
   },
   {
-    id: "pergola-outdoor-structures",
-    title: "Pergola & Outdoor Structures",
+    id: "aluminium-glass",
+    title: "Aluminium & Glass",
     description:
-      "Bespoke aluminium pergolas and outdoor living structures designed and installed for private villas across the UAE.",
-    image: asset("service/s6.webp"),
+      "Glass partitions, aluminium doors and windows, mirrors, and curtain walls — fabricated and installed to precise tolerances.",
+    image: asset("service/s1.webp"),
     features: [
-      "Custom Pergola Design & Installation",
-      "Outdoor Living & Kitchen Structures",
-      "Villa & Residential Outdoor Spaces",
+      "Glass Partitions",
+      "Aluminium Doors & Windows",
+      "Mirrors",
+      "Curtain Walls",
+    ],
+  },
+  {
+    id: "metal-fabrication",
+    title: "Stainless Steel & Metal Fabrication",
+    description:
+      "Custom metalwork that combines structural safety with architectural detail — railings, decorative panels, bollards, and cladding.",
+    image: asset("service/s4.webp"),
+    features: [
+      "Railings",
+      "Decorative Panels",
+      "Bollards",
+      "Custom Fabrication",
+      "Metal Cladding",
+    ],
+  },
+  {
+    id: "signage",
+    title: "Signage",
+    description:
+      "Indoor, outdoor, and illuminated signage — acrylic letters and complete wayfinding systems designed, fabricated, and installed.",
+    image: asset("home/i8.webp"),
+    features: [
+      "Indoor & Outdoor Signage",
+      "Illuminated Signage",
+      "Acrylic Letters",
+      "Wayfinding Systems",
+    ],
+  },
+  {
+    id: "facility-maintenance",
+    title: "Facility Maintenance",
+    description:
+      "Keep your building performing long after handover — annual contracts, preventive programmes, inspections, and emergency repairs.",
+    image: asset("home/cta.webp"),
+    features: [
+      "Annual Maintenance Contracts (AMC)",
+      "Emergency Repairs",
+      "Preventive Maintenance",
+      "Building Inspections",
     ],
   },
 ];
@@ -483,7 +576,7 @@ export const serviceCategories = [
 export const contactPageHero = {
   eyebrow: "Get In Touch",
   title: "Let's Start Your Project",
-  description: "We'd love to hear from you. Reach out to discuss your next project or ask any questions.",
+  description: "We'd love to hear from you. Reach out to discuss your fit-out, renovation, or maintenance needs.",
   backgroundImage: asset("contact/hero.webp"),
 };
 
@@ -527,35 +620,35 @@ export const contactForm = {
 
 export const faqItems = [
   {
-    question: "What services does CanDoor provide?",
+    question: "What services does Cottage provide?",
     answer:
-      "We specialize in aluminium curtain walls, structural glazing, aluminium doors and windows, frameless glass, glass partitions, cladding, handrails, designer and specialty glass, and custom pergola structures for residential, commercial, and government projects.",
+      "We provide complete turnkey building services: interior fit-out, civil works, marble and tile, gypsum and ceilings, painting, MEP (electrical and plumbing), waterproofing, joinery, aluminium and glass, stainless steel and metal fabrication, signage, and facility maintenance including Annual Maintenance Contracts.",
   },
   {
     question: "Which locations do you serve?",
     answer:
-      "We are based in Musaffah, Abu Dhabi, and serve projects across the UAE. Our evolution into CanDoor also reflects our readiness to serve international markets, including Canada.",
+      "We are based in Abu Dhabi and serve residential, commercial, retail, hospitality, government, and industrial clients across the UAE.",
+  },
+  {
+    question: "Do you offer Annual Maintenance Contracts (AMC)?",
+    answer:
+      "Yes. We offer AMC packages covering preventive maintenance, building inspections, and emergency repairs — tailored to your property type and usage.",
   },
   {
     question: "Can I request a site visit?",
     answer:
-      "Absolutely. Site visits are an essential part of our assessment process, allowing us to understand your space and deliver accurate proposals.",
+      "Absolutely. A site survey is the first step of every project — it lets us understand your space and provide an accurate, itemized quotation.",
   },
   {
-    question: "Do you handle government and large-scale projects?",
+    question: "Do you handle complete turnkey projects?",
     answer:
-      "Yes. We have delivered facilities for Barakah Nuclear Power Plant (via Yoomyung Engineering & Construction, under the Samsung & Hyundai Joint Venture / KEPCO) and Emirates Post, alongside major commercial and residential developments.",
-  },
-  {
-    question: "How quickly can you respond?",
-    answer:
-      "We aim to respond to all inquiries within 24 hours, with site visits and consultations arranged promptly based on availability.",
+      "Yes. Turnkey delivery is what we do best — one team handles design support, civil works, fit-out, MEP, finishes, and handover, then stays on for maintenance and after-sales support.",
   },
 ];
 
 export const contactPageCTA = {
-  title: "Let's Build Something Stronger, Together",
-  description: "Transform your vision into reality with our team of glass and aluminium specialists.",
+  title: "One Call. Every Trade.",
+  description: "Transform your space with a single accountable team — from design support to long-term maintenance.",
   primaryCta: "Schedule Consultation",
   secondaryCta: "View Our Work",
 };

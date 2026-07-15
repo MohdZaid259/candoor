@@ -1,9 +1,9 @@
 'use client';
 
-import Link from 'next/link';
-import Image from 'next/image';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import Link from 'next/link';
 import { footerLinks, contactInfo, companyData } from '@/lib/data';
+import Logo from './logo';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,15 +15,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-6">
-              <Image
-                src="/candoor.svg"
-                alt="CanDoor Glass Partitions"
-                width={180}
-                height={58}
-                className="h-9 w-auto"
-              />
-            </Link>
+            <div className="mb-6">
+              <Logo className="text-background" />
+            </div>
             <p className="text-background/70 leading-relaxed mb-8 text-sm max-w-sm">
               {companyData.description}
             </p>

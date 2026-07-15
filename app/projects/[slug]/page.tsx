@@ -24,7 +24,7 @@ export async function generateMetadata({
   if (!project) return {};
 
   return {
-    title: `${project.title} | CanDoor Glass Partitions LLC`,
+    title: `${project.title} | Cottage Interior Decor & Building Maintenance`,
     description: project.shortDescription,
   };
 }

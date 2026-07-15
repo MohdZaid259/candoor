@@ -7,27 +7,23 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const lora = Lora({ subsets: ['latin'], variable: '--font-serif' })
 
 export const metadata: Metadata = {
-  title: 'CanDoor Glass Partitions LLC',
-  description: 'CanDoor Glass Partitions LLC delivers premium aluminium and glass fabrication and installation — curtain walls, structural glazing, partitions, and architectural systems — for government, commercial, and residential projects across the UAE.',
-  keywords: 'aluminium and glass, curtain wall, structural glazing, glass partitions, cladding, Abu Dhabi, Musaffah, UAE, aluminium fabrication, CanDoor',
-  authors: [{ name: 'CanDoor Glass Partitions LLC' }],
+  title: 'Cottage Interior Decor & Building Maintenance',
+  description: 'Cottage Interior Decor & Building Maintenance L.L.C. S.P.C. is an Abu Dhabi-based company delivering turnkey interior fit-out, renovation, civil works, MEP services, and facility maintenance for residential, commercial, retail, hospitality, government, and industrial sectors.',
+  keywords: 'interior fit-out, building maintenance, renovation, civil works, MEP, gypsum, marble, painting, joinery, AMC, Abu Dhabi, UAE, Cottage',
+  authors: [{ name: 'Cottage Interior Decor & Building Maintenance L.L.C. S.P.C.' }],
   openGraph: {
-    title: 'CanDoor Glass Partitions LLC',
-    description: 'Transparent Solutions. Stronger Spaces. Premium aluminium and glass fabrication and installation across the UAE.',
+    title: 'Cottage Interior Decor & Building Maintenance',
+    description: 'Spaces Transformed. Buildings Maintained. Turnkey fit-out, renovation, and facility maintenance across Abu Dhabi and the UAE.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CanDoor Glass Partitions LLC',
-    description: 'Transparent Solutions. Stronger Spaces. Premium aluminium and glass fabrication and installation across the UAE.',
+    title: 'Cottage Interior Decor & Building Maintenance',
+    description: 'Spaces Transformed. Buildings Maintained. Turnkey fit-out, renovation, and facility maintenance across Abu Dhabi and the UAE.',
   },
   generator: 'v0.app',
   icons: {
     icon: [
-      {
-        url: '/icon.png',
-        media: '(prefers-color-scheme: light)',
-      },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',

@@ -45,7 +45,7 @@ export default function About() {
             <div className="relative photo-frame corner-notch-sm aspect-4/5">
               <ParallaxImg
                 src={asset('home/about-main.webp')}
-                alt="CanDoor aluminium and glass facade fabrication in progress"
+                alt="Cottage renovation and building works in progress"
               />
             </div>
 
@@ -59,7 +59,7 @@ export default function About() {
             >
               <Image
                 src={asset('home/about-overlap.webp')}
-                alt="CanDoor interior glass and aluminium fit-out detail"
+                alt="Cottage interior fit-out detail"
                 fill
                 sizes="(max-width: 1024px) 50vw, 25vw"
                 className="object-cover"
@@ -69,8 +69,8 @@ export default function About() {
             <div
               className="absolute -top-6 -right-2 sm:right-6 bg-foreground text-background rounded-xl shadow-xl px-6 py-5"
             >
-              <Counter value="15+" className="block text-3xl font-bold font-serif text-accent" />
-              <p className="text-xs text-background/70 mt-1">Years in the Industry</p>
+              <Counter value="12+" className="block text-3xl font-bold font-serif text-accent" />
+              <p className="text-xs text-background/70 mt-1">Trades In-House</p>
             </div>
           </motion.div>
 

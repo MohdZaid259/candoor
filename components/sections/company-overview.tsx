@@ -38,7 +38,7 @@ export default function CompanyOverview() {
           {/* Image + founder quote */}
           <motion.div variants={itemVariants} className="lg:sticky lg:top-28">
             <div className="relative photo-frame corner-notch-sm h-96 lg:h-105">
-              <ParallaxImg src={companyOverview.image} alt="CanDoor Glass Partitions project" />
+              <ParallaxImg src={companyOverview.image} alt="Cottage craftsmanship at work" />
               <div className="absolute inset-0 bg-linear-to-t from-foreground/30 via-transparent to-transparent" />
             </div>
 

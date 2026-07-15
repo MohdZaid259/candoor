@@ -73,9 +73,11 @@ export default function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
 
           {/* Info Cards */}
           <motion.div variants={itemVariants} className="space-y-4">
-            <ProjectInfoCard label="Project Value" value={project.value} icon={Wallet} />
+            {project.value && <ProjectInfoCard label="Project Value" value={project.value} icon={Wallet} />}
+            <ProjectInfoCard label="Delivery Model" value="Turnkey — in-house teams" icon={HardHat} />
             {project.contractor && <ProjectInfoCard label="Contractor" value={project.contractor} icon={HardHat} />}
             {project.consultant && <ProjectInfoCard label="Consultant" value={project.consultant} icon={Users} />}
+            <ProjectInfoCard label="Aftercare" value="AMC & emergency support" icon={Users} />
           </motion.div>
         </motion.div>
       </div>

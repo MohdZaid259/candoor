@@ -61,7 +61,7 @@ export default function ContactForm() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <ParallaxImg src={asset('contact/side.webp')} alt="CanDoor project consultation" />
+          <ParallaxImg src={asset('contact/side.webp')} alt="Cottage project consultation" />
           <div className="absolute inset-0 bg-linear-to-t from-foreground/85 via-foreground/25 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8 space-y-4">
             <div className="flex items-start gap-3 text-white/90">

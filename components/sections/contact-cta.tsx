@@ -31,7 +31,7 @@ export default function ContactCTA() {
   return (
     <ParallaxBand
       image={asset('contact/cta.webp')}
-      alt="CanDoor commercial glazing project"
+      alt="Cottage building project at dusk"
       overlayClassName="bg-linear-to-t from-foreground via-foreground/90 to-foreground/75"
       className="py-24 sm:py-36 text-background"
     >

@@ -30,7 +30,7 @@ export default function ContactPageHero() {
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
           src={contactPageHero.backgroundImage}
-          alt="CanDoor Glass Partitions facility"
+          alt="Cottage Interior Decor & Building Maintenance"
           fill
           priority
           sizes="100vw"

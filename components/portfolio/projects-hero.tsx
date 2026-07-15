@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { projects } from '@/lib/projects';
+import { asset } from '@/lib/assets';
 
 export default function ProjectsHero() {
   const containerVariants = {
@@ -26,8 +27,8 @@ export default function ProjectsHero() {
     <section className="relative isolate min-h-[60vh] flex items-end overflow-hidden pt-32 pb-20">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
-          src="/work/emirates-post-al-rahba__b.jpg"
-          alt="CanDoor project portfolio"
+          src={asset('home/cta.webp')}
+          alt="Cottage project portfolio"
           fill
           priority
           sizes="100vw"
@@ -42,14 +43,14 @@ export default function ProjectsHero() {
             Our Portfolio
           </motion.p>
           <motion.h1 className="text-5xl sm:text-6xl font-bold text-background mb-6 leading-tight text-shadow-sm" variants={itemVariants}>
-            Built on Trust, Delivered With Precision
+            The Work We Deliver, End to End
           </motion.h1>
           <motion.p className="text-lg sm:text-xl text-background/80 max-w-xl leading-relaxed mb-8" variants={itemVariants}>
-            From the Barakah Nuclear Power Plant to private villas — explore our portfolio of aluminium and glass
-            projects across the UAE.
+            From office fit-outs and villa renovations to annual maintenance contracts — explore the project types
+            our in-house teams deliver across Abu Dhabi and the UAE.
           </motion.p>
           <motion.div className="inline-block border-b-2 border-accent pb-1" variants={itemVariants}>
-            <p className="text-accent font-semibold">{projects.length}+ Completed Projects</p>
+            <p className="text-accent font-semibold">{projects.length} Project Types, One Accountable Team</p>
           </motion.div>
         </motion.div>
       </div>

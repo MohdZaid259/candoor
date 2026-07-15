@@ -31,7 +31,7 @@ export default function HSE() {
   return (
     <ParallaxBand
       image={asset('about/hse.webp')}
-      alt="CanDoor site works"
+      alt="Cottage site works"
       overlayClassName="bg-foreground/90"
       className="py-24 sm:py-32"
     >

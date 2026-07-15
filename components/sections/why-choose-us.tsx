@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
           >
             <span className="eyebrow">Our Advantages</span>
             <h2 className="text-4xl lg:text-5xl font-bold text-background mt-4 mb-6">
-              Why Choose <span className="text-accent">CanDoor</span>
+              Why Choose <span className="text-accent">Cottage</span>
             </h2>
             <p className="text-lg text-background/70 leading-relaxed mb-10">
               The can-do spirit driving every project, from first consultation to final handover
@@ -56,12 +56,12 @@ export default function WhyChooseUs() {
             <div className="relative photo-frame corner-notch-sm aspect-4/5 border-background/10">
               <ParallaxImg
                 src={asset('home/why.webp')}
-                alt="CanDoor glass and aluminium engineering expertise"
+                alt="Cottage project management on site"
               />
               <div className="absolute inset-0 bg-linear-to-t from-foreground/70 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <Counter value="AED 24M+" className="block text-3xl font-bold font-serif text-accent" />
-                <p className="text-sm text-white/80 mt-1">in project value delivered across the UAE</p>
+                <Counter value="100%" className="block text-3xl font-bold font-serif text-accent" />
+                <p className="text-sm text-white/80 mt-1">in-house delivery — one accountable team</p>
               </div>
             </div>
           </motion.div>

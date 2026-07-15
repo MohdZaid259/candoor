@@ -16,7 +16,7 @@ export default function ProjectDetailCTA() {
         <div className="absolute top-0 right-0 w-72 h-72 bg-accent/20 rounded-full blur-3xl z-0" />
         <h2 className="text-background mb-4 relative">Ready for Your Next Project?</h2>
         <p className="text-background/75 text-lg mb-8 max-w-2xl mx-auto relative">
-          Let&apos;s discuss how we can bring the same precision to your next glass and aluminium project.
+          Let&apos;s discuss how we can bring the same precision to your next fit-out, renovation, or maintenance project.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center relative">
           <Link href="/contact" className="button-accent">

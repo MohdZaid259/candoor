@@ -2,20 +2,21 @@
 
 import { motion } from 'framer-motion';
 import { ParallaxBand } from '@/components/ui/parallax';
+import { asset } from '@/lib/assets';
 import Counter from '@/components/ui/counter';
 
 const stats = [
-  { number: '15+', label: 'Years in the Industry' },
-  { number: '20+', label: 'Projects Delivered' },
-  { number: 'AED 24M+', label: 'Project Value Delivered' },
-  { number: '2', label: 'Countries Served' },
+  { number: '12+', label: 'Integrated Service Lines' },
+  { number: '14+', label: 'Industries Served' },
+  { number: '100%', label: 'In-House Manpower' },
+  { number: 'AMC', label: 'Maintenance Contracts' },
 ];
 
 export default function StatsBand() {
   return (
     <ParallaxBand
-      image="/work/village-mall__c.jpg"
-      alt="CanDoor facade project"
+      image={asset('home/cta.webp')}
+      alt="Cottage building works"
       overlayClassName="bg-foreground/80"
       className="py-24 sm:py-32"
     >
@@ -28,9 +29,9 @@ export default function StatsBand() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6 }}
         >
-          <span className="eyebrow justify-center">Track Record</span>
+          <span className="eyebrow justify-center">Why Cottage</span>
           <h2 className="text-4xl lg:text-5xl font-bold text-background mt-4">
-            Numbers Built on <span className="text-accent">Trust</span>
+            Turnkey, Built on <span className="text-accent">Trust</span>
           </h2>
         </motion.div>
 

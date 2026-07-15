@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 export default function Logo({
   className,
-  imgClassName,
   showTagline = true,
 }: {
   className?: string;
@@ -13,18 +11,19 @@ export default function Logo({
 }) {
   return (
     <Link href="/" className={cn('group flex items-center gap-3', className)}>
-      <Image
-        src="/candoor.svg"
-        alt="CanDoor Glass Partitions"
-        width={180}
-        height={58}
-        priority
-        className={cn('h-8 w-auto sm:h-9', imgClassName)}
-      />
+      <span className="flex items-baseline gap-1.5">
+        <span className="w-2.5 h-2.5 rotate-45 bg-accent shrink-0 self-center" aria-hidden="true" />
+        <span className="font-serif text-2xl sm:text-[1.65rem] font-bold tracking-tight leading-none">
+          Cottage
+        </span>
+      </span>
       {showTagline && (
         <span className="hidden md:flex flex-col leading-none border-l border-current/20 pl-3">
-          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase opacity-70">
-            Glass Partitions
+          <span className="text-[10px] font-semibold tracking-[0.18em] uppercase opacity-70">
+            Interior Decor &
+          </span>
+          <span className="text-[10px] font-semibold tracking-[0.18em] uppercase opacity-70 mt-1">
+            Building Maintenance
           </span>
         </span>
       )}

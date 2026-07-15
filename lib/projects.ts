@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       "F&B fit-out covering kitchen MEP, dining area finishes, decorative ceilings, custom counters, and signage — built for authority approvals and fast opening.",
     shortDescription: "F&B fit-out built for approvals and fast opening.",
-    heroImage: asset("home/i6.webp"),
+    heroImage: asset("project/cafe.webp"),
     images: [asset("home/i6.webp"), asset("service/s5.webp"), asset("service/hs5.webp")],
     overview:
       "Restaurant and café projects demand tight coordination between front-of-house finishes and back-of-house services. We deliver kitchen plumbing, drainage, and power; dining-area flooring, gypsum features, and decorative ceilings; custom counters and joinery; and illuminated signage — sequenced so inspections and approvals never hold up the opening date.",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     description:
       "Retail fit-out with display joinery, feature lighting, flooring, storefront glass, and wayfinding signage — delivered around mall working-hour restrictions.",
     shortDescription: "Retail fit-out delivered around mall restrictions.",
-    heroImage: asset("home/i4.webp"),
+    heroImage: asset("project/shop.webp"),
     images: [asset("home/i4.webp"), asset("home/i8.webp")],
     overview:
       "Retail units come with landlord requirements, night-shift working windows, and hard opening dates. Our crews deliver display joinery, feature lighting and power, flooring, storefront glazing, and signage on programmes planned around mall operating restrictions — with snagging and handover documentation ready for landlord inspection.",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     description:
       "Complete villa renovation — marble flooring, bathroom remodelling, kitchen joinery, gypsum ceilings, painting, MEP upgrades, and waterproofing.",
     shortDescription: "Whole-villa transformation, structure to finishes.",
-    heroImage: asset("home/i3.webp"),
+    heroImage: asset("project/villa.webp"),
     images: [asset("home/i3.webp"), asset("service/s3.webp"), asset("service/hs3.webp")],
     overview:
       "A full villa renovation touches every one of our trades: civil alterations, marble and tile throughout, remodelled bathrooms with new plumbing and waterproofing, custom kitchen and wardrobe joinery, gypsum ceilings, complete repainting, and upgraded electrical distribution. One team carries the family from design choices to a finished home.",

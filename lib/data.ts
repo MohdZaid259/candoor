@@ -454,7 +454,7 @@ export const serviceCategories = [
     title: "Gypsum & Ceiling Works",
     description:
       "Partitions and ceilings that define interior spaces — from clean suspended grids to decorative and acoustic ceiling features.",
-    image: asset("home/i6.webp"),
+    image: asset("home/hs4.webp"),
     features: [
       "Gypsum Partitions",
       "Suspended Ceilings",
@@ -468,7 +468,7 @@ export const serviceCategories = [
     title: "Painting Works",
     description:
       "Interior and exterior painting with the right coating for every surface — including textures, waterproof coatings, and protective systems.",
-    image: asset("home/about-main.webp"),
+    image: asset("service/s5.webp"),
     features: [
       "Interior Painting",
       "Exterior Painting",
@@ -482,7 +482,7 @@ export const serviceCategories = [
     title: "MEP Services",
     description:
       "Electrical, plumbing, and drainage works delivered by qualified in-house technicians — from DB installation to pumps and power distribution.",
-    image: asset("home/why.webp"),
+    image: asset("service/hs4.webp"),
     features: [
       "Electrical Works & DB Installation",
       "Plumbing & Drainage",
@@ -509,7 +509,7 @@ export const serviceCategories = [
     title: "Joinery & Carpentry",
     description:
       "Custom woodwork fabricated and installed to fit — cabinets, doors, wardrobes, reception counters, and bespoke wooden features.",
-    image: asset("service/s5.webp"),
+    image: asset("service/s8.webp"),
     features: [
       "Cabinets & Wardrobes",
       "Doors",

@@ -31,8 +31,8 @@ const imageMap: Record<string, string> = {
   'civil-works': asset('about/mission.webp'),
   'marble-tile-works': asset('service/hs3.webp'),
   'gypsum-works': asset('home/i6.webp'),
-  'mep-services': asset('home/why.webp'),
-  'facility-maintenance': asset('home/cta.webp'),
+  'mep-services': asset('service/hs4.webp'),
+  'facility-maintenance': asset('home/i9.webp'),
 };
 
 export default function Services() {

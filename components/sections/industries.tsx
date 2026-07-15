@@ -18,7 +18,7 @@ const images = [
   asset('home/i5.webp'),
   asset('home/i6.webp'),
   asset('home/i7.webp'),
-  asset('home/i8.webp'),
+  asset('home/i10.webp'),
 ];
 
 export default function Industries() {

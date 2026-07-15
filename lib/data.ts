@@ -562,7 +562,7 @@ export const serviceCategories = [
     title: "Facility Maintenance",
     description:
       "Keep your building performing long after handover — annual contracts, preventive programmes, inspections, and emergency repairs.",
-    image: asset("home/cta.webp"),
+    image: asset("home/i9.webp"),
     features: [
       "Annual Maintenance Contracts (AMC)",
       "Emergency Repairs",

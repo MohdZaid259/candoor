@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { imageLogger } from '@/lib/imageLogger';
 
 interface ParallaxBandProps {
   image: string;
@@ -19,6 +20,7 @@ export function ParallaxBand({ image, alt = '', overlayClassName, className, chi
   const prefersReduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], ['-12%', '12%']);
+  const logId = useRef<string | null>(null);
 
   return (
     <section ref={ref} className={cn('relative isolate overflow-hidden', className)}>
@@ -27,7 +29,24 @@ export function ParallaxBand({ image, alt = '', overlayClassName, className, chi
           style={prefersReduced ? undefined : { y }}
           className="absolute -top-[14%] -bottom-[14%] left-0 right-0"
         >
-          <Image src={image} alt={alt} fill sizes="100vw" className="object-cover" />
+          <Image
+            src={image}
+            alt={alt}
+            fill
+            sizes="100vw"
+            className="object-cover"
+            onLoadingComplete={() => {
+              if (logId.current) imageLogger.success(logId.current);
+            }}
+            onError={(error) => {
+              if (logId.current) imageLogger.error(logId.current, error);
+            }}
+            onLoad={() => {
+              if (!logId.current) {
+                logId.current = imageLogger.startLoad(image, alt, 'ParallaxBand');
+              }
+            }}
+          />
         </motion.div>
         <div className={cn('absolute inset-0', overlayClassName ?? 'bg-foreground/85')} />
       </div>
@@ -50,6 +69,7 @@ export function ParallaxImg({ src, alt, className, sizes, priority }: ParallaxIm
   const prefersReduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], ['-8%', '8%']);
+  const logId = useRef<string | null>(null);
 
   return (
     <div ref={ref} className="absolute inset-0 overflow-hidden">
@@ -64,6 +84,17 @@ export function ParallaxImg({ src, alt, className, sizes, priority }: ParallaxIm
           priority={priority}
           sizes={sizes ?? '(max-width: 1024px) 100vw, 50vw'}
           className={cn('object-cover', className)}
+          onLoadingComplete={() => {
+            if (logId.current) imageLogger.success(logId.current);
+          }}
+          onError={(error) => {
+            if (logId.current) imageLogger.error(logId.current, error);
+          }}
+          onLoad={() => {
+            if (!logId.current) {
+              logId.current = imageLogger.startLoad(src, alt, 'ParallaxImg');
+            }
+          }}
         />
       </motion.div>
     </div>

@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, Lora } from 'next/font/google'
 import './globals.css'
+import { ImageTracker } from '@/components/utils/image-tracker'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const lora = Lora({ subsets: ['latin'], variable: '--font-serif' })
@@ -45,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${lora.variable} bg-background`}>
       <body className="antialiased font-sans">
+        <ImageTracker />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
